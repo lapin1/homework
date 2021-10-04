@@ -2,6 +2,10 @@ package by.training.lapin.main.task01;
 
 import java.util.Scanner;
 
+/*
+Сформировать квадратную матрицу порядка n по заданному образцу(n - четное).
+ */
+
 public class Task01 {
     public static void main(String[] args){
 
