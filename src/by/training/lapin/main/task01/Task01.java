@@ -35,7 +35,7 @@ public class Task01 {
     // заполняем массив
     private static void fillArray(int[][] array){
         for(int i = 0; i < array.length; i++){
-            for (int j = 0; j < array.length; j++){
+            for (int j = 0; j < array[i].length; j++){
                 array[i][j] = j + 1;
             }
         }
@@ -44,7 +44,7 @@ public class Task01 {
     // формируем по образцу (строки с нечетными индексами выводятся в обратном порядке)
     private static void rotateOdd(int[][] array){
         for(int i = 0; i < array.length; i++){
-            for (int j = 0; j < array.length; j++){
+            for (int j = 0; j < array[i].length; j++){
                 if(i % 2 != 0){
                     array[i][j] = array.length - j;
                 }
@@ -55,7 +55,7 @@ public class Task01 {
     // выводим массив на экран
     private static void printArray(int[][] array){
         for(int i = 0; i < array.length; i++){
-            for (int j = 0; j < array.length; j++){
+            for (int j = 0; j < array[i].length; j++){
                 System.out.print(array[i][j] + " ");
             }
             System.out.println();
